@@ -30,7 +30,7 @@ body {
 }
 
 section {
-    padding: 4rem 0;
+    padding: 8rem 0;
     overflow: hidden;
 }
 
@@ -45,11 +45,12 @@ a {
 
 p {
     font-size: 1.6rem;
+    line-height: 1.6;
 }
 
 .container {
     width: 100%;
-    max-width: 122.5rem;
+    max-width: 120rem;
     margin: 0 auto;
     padding: 0 2.4rem;
 }
@@ -58,11 +59,10 @@ p {
 
 header {
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+    position: fixed;
+    z-index: 100;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .navigation {
@@ -102,7 +102,7 @@ header {
     width: 80%;
     height: 100%;
     background-color: var(--main-font-color-dark);
-    padding: 0 4.4rem;
+    padding: 0 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -172,12 +172,12 @@ header {
     text-align: center;
 }
 
-.headline {
+.hero-headline {
     font-size: 7.2rem;
     color: #fff;
+    line-height: 1;
     letter-spacing: 1rem;
     margin-right: -1rem;
-    line-height: 1;
     opacity: 0;
     animation: scale .5s forwards;
 }
@@ -206,7 +206,7 @@ header {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    border: .6rem solid transparent;
+    border: .8rem solid transparent;
     opacity: 0;
     animation: grow .5s forwards;
     animation-delay: 1.2s;
@@ -223,7 +223,7 @@ header {
 }
 
 .asterisk {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: var(--secondary-font-color);
     margin: 0 1.6rem;
     opacity: 0;
@@ -241,14 +241,15 @@ header {
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin-right: -2px;
 }
 
 .cta-btn {
     font-size: 1.2rem;
     background-color: #fff;
-    padding: .9rem 1.8rem;
+    padding: 1.2rem 2.4rem;
     color: var(--body-font-color);
-    border-radius: .4rem;
+    border-radius: .8rem;
     transition: background-color .5s;
 }
 
@@ -312,3 +313,96 @@ header {
         transform: translateY(-1rem);
     }
 }
+
+/* OUR STORY */
+
+.container-box {
+    text-align: center;
+}
+
+.text-group {
+    margin-bottom: 8rem;
+}
+
+.section-headline {
+    color: var(--main-font-color-dark);
+    font-size: 4rem;
+    font-family: var(--main-font);
+    font-weight: 900;
+    letter-spacing: .8rem;
+    margin-right: -.8rem;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: scale .5s forwards;
+}
+
+.text-group .asterisk {
+    color: var(--secondary-font-color);
+    margin: 2.4rem 0;
+}
+
+.text-group p {
+    margin-bottom: 2.4rem;
+}
+
+.body-btn {
+    color: var(--secondary-font-color);
+    font-size: 1.6rem;
+    position: relative;
+    transition: color .5s;
+}
+
+.body-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-font-color);
+    transition: background-color .5s;
+}
+
+.body-btn:hover,
+.body-btn:focus {
+    color: var(--main-font-color-dark)
+}
+
+.body-btn:hover::before,
+.body-btn:focus::before {
+    background-color: var(--main-font-color-dark)
+}
+
+.image-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.6rem;
+}
+
+/* DUMPLINGS */
+
+.dumplings {
+    background: url("../images/dumpling-web.jpg") center no-repeat;
+    background-size: cover;
+    height: 60%;
+}
+
+/* OUR MENU */
+
+.our-menu .section-headline {
+    padding-top: 8rem;
+}
+
+.our-menu .text-group {
+    margin-bottom: 0;
+}
+
+/* DIM SUM */
+
+.dim-sum {
+    background: url("../images/dim-sum-web.jpg") center no-repeat;
+    background-size: cover;
+    height: 60%;
+}
+
+/* TESTIMONIALS */
