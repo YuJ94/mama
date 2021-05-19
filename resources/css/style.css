@@ -302,19 +302,6 @@ header {
     }
 }
 
-@keyframes infiniteUp {
-    0%{
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: translateY(-1rem);
-    }
-}
-
 /* OUR STORY */
 
 .container-box {
@@ -439,7 +426,7 @@ header {
     top: 50%;
     transform: translateY(-50%);
     left: 1.6rem;
-    color: #000;
+    color: var(--main-font-color-dark);
     font-size: 2.4rem;
     padding-bottom: 2.4rem;
     z-index: 200;
@@ -451,9 +438,88 @@ header {
     top: 50%;
     transform: translateY(-50%);
     right: 1.6rem;
-    color: #000;
+    color: var(--main-font-color-dark);
     font-size: 2.4rem;
     padding-bottom: 2.4rem;
     z-index: 200;
     cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    color: #fff;
+    background-color: #121212;
+    padding: 8rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.back-to-top {
+    width: 7rem;
+    height: 7rem;
+    background-color: #121212;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.back-to-top i {
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+    padding: 2rem;
+    animation: infiniteUp 2.5s infinite;
+}
+
+.footer-content {
+    overflow: hidden;
+}
+
+.footer-content h4 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-right: -3px;
+}
+
+.footer-content .asterisk {
+    margin: 2.4rem 0;
+}
+
+.footer-content-about {
+    margin-bottom: 4.8rem;
+}
+
+.footer-content-about a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color .5s;
+}
+
+.footer-content-about a:hover {
+    color: var(--secondary-font-color);
+}
+
+.social-icons {
+    list-style: none;
+    margin-top: 2.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    color: #fff;
+    padding: .8rem 2rem;
+    opacity: .5;
+    transition: color .5s;
+}
+
+.social-icons i:hover,
+.social-icons i:focus {
+    color: var(--secondary-font-color);
 }
