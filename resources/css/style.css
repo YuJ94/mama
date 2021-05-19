@@ -17,9 +17,9 @@
 }
 
 html {
-    font-family: var(--body-font);
-    font-size: 10px;
     color: var(--body-font-color);
+    font-size: 10px;
+    font-family: var(--body-font);
     height: 100%;
     scroll-behavior: smooth;
 }
@@ -59,18 +59,19 @@ p {
 
 header {
     width: 100%;
-    position: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 100;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent);
-    background-color: rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
 }
 
 .navigation {
     height: 7.2rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu-toggle {
@@ -184,8 +185,8 @@ header {
 
 .separator {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin: 1.6rem;  
 }
 
@@ -223,8 +224,8 @@ header {
 }
 
 .asterisk {
-    font-size: 1.6rem;
     color: var(--secondary-font-color);
+    font-size: 1.6rem;
     margin: 0 1.6rem;
     opacity: 0;
     animation: spin .5s forwards;
@@ -245,10 +246,10 @@ header {
 }
 
 .cta-btn {
+    color: var(--body-font-color);
     font-size: 1.2rem;
     background-color: #fff;
     padding: 1.2rem 2.4rem;
-    color: var(--body-font-color);
     border-radius: .8rem;
     transition: background-color .5s;
 }
@@ -329,15 +330,14 @@ header {
     font-size: 4rem;
     font-family: var(--main-font);
     font-weight: 900;
-    letter-spacing: .8rem;
-    margin-right: -.8rem;
+    letter-spacing: .4rem;
+    margin-right: -.4rem;
     text-transform: uppercase;
     opacity: 0;
     animation: scale .5s forwards;
 }
 
 .text-group .asterisk {
-    color: var(--secondary-font-color);
     margin: 2.4rem 0;
 }
 
@@ -389,12 +389,12 @@ header {
 
 /* OUR MENU */
 
-.our-menu .section-headline {
-    padding-top: 8rem;
-}
-
 .our-menu .text-group {
     margin-bottom: 0;
+}
+
+.our-menu .section-headline {
+    padding-top: 8rem;
 }
 
 /* DIM SUM */
@@ -406,3 +406,54 @@ header {
 }
 
 /* TESTIMONIALS */
+
+.carousel-container {
+    /* border: 5px solid black; */
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-box {
+    display: flex;
+    width: 600%;
+}
+
+.carousel-text {
+    width: 100%;
+    margin-bottom: 2.4rem;
+}
+
+.carousel-text p {
+    width: 70%;
+    font-style: italic;
+    margin: 0 auto;
+    margin-bottom: 1.6rem;
+}
+
+.carousel-text span {
+    font-size: 1.6rem;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.6rem;
+    color: #000;
+    font-size: 2.4rem;
+    padding-bottom: 2.4rem;
+    z-index: 200;
+    cursor: pointer;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.6rem;
+    color: #000;
+    font-size: 2.4rem;
+    padding-bottom: 2.4rem;
+    z-index: 200;
+    cursor: pointer;
+}
