@@ -320,8 +320,6 @@ header {
     letter-spacing: .4rem;
     margin-right: -.4rem;
     text-transform: uppercase;
-    opacity: 0;
-    animation: scale .5s forwards;
 }
 
 .text-group .asterisk {
@@ -633,8 +631,16 @@ footer {
         margin-bottom: 3.2rem;
     }
 
+    .dumplings {
+        background-attachment: fixed;
+    }
+
     .our-menu .section-headline {
         padding-top: 0;
+    }
+
+    .dim-sum {
+        background-attachment: fixed;
     }
 
     .carousel-text {
