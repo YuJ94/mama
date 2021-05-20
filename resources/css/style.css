@@ -485,6 +485,10 @@ footer {
     margin-right: -6px;
 }
 
+.footer-content .asterisk {
+    margin: 2.4rem 0;
+}
+
 .footer-content h4 {
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -493,12 +497,12 @@ footer {
     margin-right: -3px;
 }
 
-.footer-content .asterisk {
-    margin: 2.4rem 0;
-}
-
 .footer-content-about {
     margin-bottom: 4.8rem;
+}
+
+.footer-content-about p {
+    font-size: 1.4rem;
 }
 
 .footer-content-about a {
@@ -513,7 +517,7 @@ footer {
 
 .social-icons {
     list-style: none;
-    margin-top: 3.2rem;
+    margin-top: 2.4rem;
     display: flex;
     justify-content: center;
 }
