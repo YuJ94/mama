@@ -1,13 +1,13 @@
 # 妈妈
-Developed a website for a Chinese restaurant based off the custom WordPress theme, the [Rosa](https://demos.pixelgrade.com/rosa/), by Pixelgrade.
+A responsive and static website based on the custom WordPress theme, the [Rosa](https://demos.pixelgrade.com/rosa/), by Pixelgrade.
 
 ## Screenshot
 ![preview of landing page](./resources/images/mama.jpg)
 
 ## Visit
-Click [here](https://yuj94.github.io/mama/) to visit the website.
+To view this website live, please visit [here](https://yuj94.github.io/mama/).
 
-## Technologies
+## Technologies Used
 Project was built with:
 - HTML
 - CSS
